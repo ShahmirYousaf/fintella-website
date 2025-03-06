@@ -2,12 +2,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Products from './Pages/Product/Product';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <Products/>
+      <Routes>
+      <Route path="/" element={<Products />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails/>} />
+      </Routes>
       </Router>
   );
 }

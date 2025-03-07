@@ -8,8 +8,6 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <> 
-    <Navbar/>
     <div className="faq-container">
       <h1 className="faq-title">Frequently Asked Questions</h1>
       <div className="faq-list">
@@ -35,7 +33,6 @@ const FAQ = () => {
         ))}
       </div>
     </div>
-    </>
   );
 };
 

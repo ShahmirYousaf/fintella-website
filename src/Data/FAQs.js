@@ -7,7 +7,7 @@ export const faqs = [
     {
       question: "How can I contact Fintella Technologies for support or inquiries?",
       answer:
-        "You can reach us at 021 34810532 or via email at info@rapid-itsolutions.com. Our office is located at Office no A 80, 4th Floor, RJ Mall Karachi, Rashid Minhas Rd, Gulistan-e-Johar, Karachi, Sindh 75050.",
+        "You can reach us at 03295480567 or via email at Ceofintella@gmail.com. Our office is located at Flat 4 4th floor Al Mubarak arcade Gulberg greens Islamabad.",
     },
     {
       question: "What payment solutions do you offer for businesses?",

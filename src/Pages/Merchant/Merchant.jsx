@@ -6,7 +6,7 @@ import './Merchant.css';
 const Merchant = () => {
   return (
     <div className="merchant-container">
-      <h1 className="title">Our Sub Merchants</h1>
+      <h1 className="merchant-page-title">Our Sub Merchants</h1>
       <div className="merchant-grid">
         {merchants.map((merchant) => (
           <div key={merchant.id} className="merchant-card">

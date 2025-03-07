@@ -5,11 +5,11 @@
     padding: 20px;
     padding-top: 100px; /* Leave space for the navbar */
     text-align: center;
-    background-color: #f9f9f9; /* Light background */
+    background-color: hsl(0, 0%, 100%); /* Light background */
     color: #333; /* Dark gray text */
   }
   
-  .title {
+  .merchant-page-title {
     font-size: 32px;
     font-weight: bold;
     color: #000; /* Black color for the title */
@@ -58,7 +58,7 @@
   
   .merchant-title {
     font-size: 24px;
-    color: #ff0000; /* Red color for the title */
+    color: #F52324; /* Red color for the title */
     margin-bottom: 10px;
     min-height: 50px; /* Ensure consistent height for titles */
     display: flex;
@@ -76,7 +76,7 @@
   .merchant-link {
     display: inline-block;
     padding: 10px 20px; /* Reduced padding for a smaller button */
-    background-color: #ff0000; /* Red background for the button */
+    background-color: #F52324; /* Red background for the button */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -88,7 +88,7 @@
   }
   
   .merchant-link:hover {
-    background-color: #cc0000; /* Darker red on hover */
+    background-color: #B11224; /* Darker red on hover */
   }
   
   .merchant-link-icon {

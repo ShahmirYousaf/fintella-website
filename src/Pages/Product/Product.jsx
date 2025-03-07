@@ -6,8 +6,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 
 const Products = () => {
   return (
-    <> 
-     <Navbar/>
+    
     <div className="products-container">
       <h1 className="title">Our Products</h1>
       <div className="products-grid">
@@ -28,7 +27,6 @@ const Products = () => {
         ))}
       </div>
     </div>
-    </>
   );
 };
 

@@ -32,11 +32,11 @@ const Home = () => {
             <img src={`${process.env.PUBLIC_URL}/assets/aboutus.jpg`} alt="About Us" />
           </div>
           <div className="about-us-text">
-            <h2>Rapid IT-Solutions <br />About Us</h2>
+            <h2>Fintella Technologies <br />About Us</h2>
             <p>
-              Rapid IT Solutions leads the way in financial solutions, revolutionizing how businesses manage pay-ins and pay-outs. We provide advanced Software Development, IT Solutions, and Digital Transformation services, such as Data Processing, API Integrations, and Custom Software.
+            Fintella Technologies leads the way in financial solutions, revolutionizing how businesses manage pay-ins and pay-outs. We provide advanced Software Development, IT Solutions, and Digital Transformation services, such as Data Processing, API Integrations, and Custom Software.
               Our goal is to simplify and improve payment processes, enabling organizations to prioritize their key objectives. With proficiency in Technology Services, Consultancy, and Training, we transform every transaction into a chance for growth and success.
-              Collaborate with Rapid IT Solutions to streamline your pay-ins and pay-outs and discover new opportunities for your business.
+              Collaborate with Fintella Technologies to streamline your pay-ins and pay-outs and discover new opportunities for your business.
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
         <section className='navBarSection'>
             <header className='headerNavbar flex'>
                 <div className='logoDiv'>
-                    <Link className="logo flex" to="/home">
+                    <Link className="logo flex" to="/">
 
                         <img src={`${process.env.PUBLIC_URL}/assets/Logo.png`} alt="Error" className="icon" ></img>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className={active}>
                     <ul className="navLists-FT flex">
 
-                        <Link className='link-underline-issue' to="/home">
+                        <Link className='link-underline-issue' to="/">
                             <li className="navItem-FT">
                                 <p className="NavBarLinks-FT">Home</p>
                             </li>

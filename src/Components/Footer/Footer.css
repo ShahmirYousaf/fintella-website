@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 5px 0;
   font-family: Arial, sans-serif;
   color: #555;
@@ -39,7 +39,7 @@
 }
 
 .footer-links {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   flex: 1;
   margin-left: 70px;
   margin-top: 60px

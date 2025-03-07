@@ -4,7 +4,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 import emailjs from '@emailjs/browser';
 import { faPhoneAlt, faEnvelope, faMapMarkerAlt, faGavel, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "../../Components/Navbar/Footer/Footer";
 
 function ContactPage() {
   const [formData, setFormData] = useState({

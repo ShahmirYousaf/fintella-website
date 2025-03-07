@@ -1,7 +1,6 @@
 import React from 'react';
 import './Privacypolicy.css'; // Import the associated CSS file for styling
 import Navbar from '../../Components/Navbar/Navbar';
-import Footer from '../../Components/Navbar/Footer/Footer';
 
 function PrivacyPolicy() {
   return (

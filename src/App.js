@@ -8,6 +8,7 @@ import Home from './Pages/Home/Home';
 import FAQ from './Pages/FAQ/FAQ';
 import ContactPage from './Pages/Contact/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy/Privacy-policy';
+import Footer from './Components/Navbar/Footer/Footer';
 
 function App() {
   return (
@@ -17,8 +18,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/merchant" element={<Merchant />} />
+
         <Route path="/products/:id" element={<ProductDetails/>} />
+        <Route path='/contact' element={<ContactPage/>}/>
+        <Route path='/privacy' element={<PrivacyPolicy/>}/>
+
       </Routes>
+      <Footer/>
     </Router>
   );
 }

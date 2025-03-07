@@ -178,9 +178,7 @@ function ContactPage() {
     </div>
     
 
-    <div>
-    <Footer/>
-    </div>
+  
     </>
     
     

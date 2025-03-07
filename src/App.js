@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Products from './Pages/Product/Product';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import FAQ from './Pages/FAQ/FAQ';
+import ContactPage from './Pages/Contact/Contact';
+import PrivacyPolicy from './Pages/PrivacyPolicy/Privacy-policy';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/products/:id" element={<ProductDetails/>} />
+        <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="/privacy" element={<PrivacyPolicy/>}/>
       </Routes>
       </Router>
   );

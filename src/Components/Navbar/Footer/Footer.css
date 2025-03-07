@@ -1,0 +1,137 @@
+/* Footer Styles */
+.footer {
+  background-color: #f4f4f4;
+  padding: 5px 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+  text-align: left;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top:0;
+}
+
+.footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack logo and description vertically */
+  justify-content: flex-start; /* Align to the top */
+}
+
+.footer-logo {
+  width: 100px; /* Adjust logo width */
+  margin-right: 20px; /* Add space after the logo */
+  align-self:center ;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.footer-links {
+  margin-bottom: 0px;
+  flex: 1;
+  margin-left: 70px;
+  margin-top: 60px
+}
+
+.footer-links h3 {
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+  text-align: center; /* Center the heading */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: flex; /* Use flexbox to align icon and text */
+  align-items: center; /* Vertically align the icon with the text */
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 8px; /* Space between icon and text */
+}
+
+.footer-links ul li a:hover {
+  color: #4CAF50;
+}
+
+.footer-follow {
+  flex: 1;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-follow h3 {
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #4CAF50;
+  transition: color 0.3s;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  color: red;
+  padding: 5px;
+  text-align: center;
+}
+
+.social-icon:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Additional Adjustment for Quick Links (optional) */
+.ql-wrapper {
+  margin-left: 80px;
+  
+}
+
+/* Align the footer icons properly */
+.footer-icon {
+  margin-right: 8px;
+  border: 2px solid darkgray;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: red;
+  padding: 5px;
+  text-align: center;
+}

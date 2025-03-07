@@ -1,0 +1,110 @@
+/* General Container Styling */
+.privacy-policy-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;  /* Increase padding for spacing */
+    background-color: #fff; /* Add a white background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    border-radius: 8px; /* Slight border radius */
+  }
+  
+  /* Header Styling */
+  .privacy-policy-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px; /* Ensure it's pushed below the navbar */
+  }
+  
+  .privacy-policy-header h1 {
+    font-size: 2.5rem;
+    color: #555; /* Use a more vibrant color for the title */
+    font-weight: 700;  /* Make the title bold */
+    text-transform: uppercase; /* Make the title uppercase for emphasis */
+  }
+  
+  /* Section Headers Styling */
+  .privacy-policy-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .privacy-policy-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Paragraph Styling */
+  .privacy-policy-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;  /* Increase line height for better readability */
+    margin-bottom: 15px;
+  }
+  
+  /* List Styling */
+  .privacy-policy-content ul,
+  .privacy-policy-content ol {
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .privacy-policy-content ul li,
+  .privacy-policy-content ol li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6; /* Improve line spacing */
+  }
+  
+  /* Bold Text Styling */
+  .privacy-policy-content p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Links Styling */
+  .privacy-policy-content a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .privacy-policy-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section Styling */
+  .privacy-policy-content .contact-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid red; /* Green border for the contact section */
+  }
+  
+  .privacy-policy-content .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

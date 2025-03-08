@@ -11,6 +11,10 @@
   margin-top: 10px;
 }
 
+.activePage {
+  border-bottom: 2.5px solid var(--Primarycolor); /* Optional: add a border for emphasis */
+}
+
 .headerNavbar {
   position: fixed;
   justify-content: space-between;
@@ -65,7 +69,7 @@
     font-weight: 600;
   }
   .headerNavbar .navBar .navLists-FT .navItem-FT .NavBarLinks-FT:hover {
-    color: #FEBA3F;
+    color: var(--Secondarycolor);
   }
   .headerNavbar .navBar .closeNavBar {
     position: absolute;

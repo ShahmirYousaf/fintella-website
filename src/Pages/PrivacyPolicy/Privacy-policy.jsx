@@ -14,7 +14,7 @@ function PrivacyPolicy() {
         <section className="privacy-policy-content">
           <h2>Introduction</h2>
           <p>
-            At Rapid IT Solutions, your privacy is our top priority. This Privacy Policy outlines how we collect, use, protect, and manage your personal information. By using our website and services, you agree to the practices described in this policy.
+            At Fintella Technologies, your privacy is our top priority. This Privacy Policy outlines how we collect, use, protect, and manage your personal information. By using our website and services, you agree to the practices described in this policy.
           </p>
 
           <h2>Information We Collect</h2>
@@ -40,7 +40,7 @@ function PrivacyPolicy() {
             <li>To provide and enhance our services.</li>
             <li>To respond to inquiries and support requests.</li>
             <li>To process payments and deliver solutions.</li>
-            <li>To improve our website’s functionality and user experience.</li>
+            <li>To improve our website's functionality and user experience.</li>
             <li>To send promotional offers, updates, or newsletters (you may opt-out at any time).</li>
           </ol>
 

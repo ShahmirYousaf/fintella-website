@@ -1,72 +1,108 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import "./Navbar.css"
-import { AiFillCloseCircle } from 'react-icons/ai'
-import { TbGridDots } from 'react-icons/tb'
-
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
+import { AiFillCloseCircle } from 'react-icons/ai';
+import { TbGridDots } from 'react-icons/tb';
 
 const Navbar = () => {
+    const [active, setActive] = useState('navBar');
 
-    const [active, setActive] = useState('navBar')
     // Function for toggling navBar
     const showNavBar = () => {
-        setActive('navBar activeNavbar')
-    }
+        setActive('navBar activeNavbar');
+    };
+
     // Function for closing navBar
     const removeNavBar = () => {
-        setActive('navBar')
-    }
+        setActive('navBar');
+    };
 
     return (
         <section className='navBarSection'>
             <header className='headerNavbar flex'>
                 <div className='logoDiv'>
-                    <Link className="logo flex" to="/">
-
-                        <img src={`${process.env.PUBLIC_URL}/assets/Logo.png`} alt="Error" className="icon" ></img>
-
-                    </Link>
+                    <NavLink className="logo flex" to="/">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assets/Logo.png`}
+                            alt="Error"
+                            className="icon"
+                        />
+                    </NavLink>
                 </div>
 
                 <div className={active}>
                     <ul className="navLists-FT flex">
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                Home
+                            </NavLink>
+                        </li>
 
-                        <Link className='link-underline-issue' to="/">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">Home</p>
-                            </li>
-                        </Link>
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/products"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                Products
+                            </NavLink>
+                        </li>
 
-                        <Link className='link-underline-issue' to="/products">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">Products</p>
-                            </li>
-                        </Link>
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/merchant"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                SubMerchants
+                            </NavLink>
+                        </li>
 
-                        <Link className="link-underline-issue" to="/merchant">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">SubMerchants</p>
-                            </li>
-                        </Link>
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/faq"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                FAQ
+                            </NavLink>
+                        </li>
 
-                        <Link className='link-underline-issue' to="/faq">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">FAQ</p>
-                            </li>
-                        </Link>
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/privacy"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                Privacy Policy
+                            </NavLink>
+                        </li>
 
-                        <Link className='link-underline-issue' to="/privacy">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">Privacy Policy</p>
-                            </li>
-                        </Link>
-
-                        <Link className='link-underline-issue' to="/contact">
-                            <li className="navItem-FT">
-                                <p className="NavBarLinks-FT">Contact</p>
-                            </li>
-                        </Link>
-
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/contact"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
                     </ul>
                     <div onClick={removeNavBar} className="closeNavBar">
                         <AiFillCloseCircle className="icon" />
@@ -76,7 +112,6 @@ const Navbar = () => {
                 <div onClick={showNavBar} className="toggleNavBar">
                     <TbGridDots className="icon" />
                 </div>
-
             </header>
         </section>
     );

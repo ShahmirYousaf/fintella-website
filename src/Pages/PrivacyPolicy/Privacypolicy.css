@@ -22,7 +22,8 @@
     font-weight: 700;  /* Make the title bold */
     text-transform: uppercase; /* Make the title uppercase for emphasis */
   }
-  
+ 
+
   /* Section Headers Styling */
   .privacy-policy-content h2 {
     font-size: 1.8rem;

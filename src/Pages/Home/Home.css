@@ -367,10 +367,6 @@ body {
       text-align: center;
     }
   
-    .service-grid {
-      flex-direction: column;
-    }
-  
     .brands-grid {
       flex-direction: row;
     }

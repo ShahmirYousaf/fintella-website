@@ -134,6 +134,7 @@ function ContactPage() {
           </form>
         </div>
         <div className="contact-info">
+          <h1 className="heading-contact-fint">Fintella Technologies</h1>
       <h3>Contact Details</h3>
 
       <p>

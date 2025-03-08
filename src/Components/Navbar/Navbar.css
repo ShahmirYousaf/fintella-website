@@ -34,7 +34,7 @@
 .headerNavbar .logo .icon {
   font-size: 20px;
   height: 90px;
-  width: 105px;
+  width: 100px;
   color: var(--Primarycolor);
 }
 @media screen and (max-width: 768px) {

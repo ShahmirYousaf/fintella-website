@@ -53,8 +53,8 @@ function PrivacyPolicy() {
           <h2>Updates to This Policy</h2>
           <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with a revised effective date. We encourage you to review this policy periodically.</p>
 
-          <h2>Contact Us</h2>
-          <div className="contact-info">
+          <h2 className='privacy-contact'>Contact Us</h2>
+          <div className="contact-info-privacy">
             <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
             <p><strong>Fintella Technologies</strong></p>
             <p>Flat 4 4th floor Al Mubarak arcade Gulberg greens Islamabad</p>

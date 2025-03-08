@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
   color: #555;
   text-align: left;
-  
 }
 
 .footer-container {
@@ -14,7 +13,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  margin-top:0;
+  margin-top: 0;
+  flex-wrap: wrap; /* Allow sections to stack on smaller screens */
 }
 
 .footer-left {
@@ -22,12 +22,13 @@
   display: flex;
   flex-direction: column; /* Stack logo and description vertically */
   justify-content: flex-start; /* Align to the top */
+  margin-bottom: 20px; /* Add some margin for spacing */
 }
 
 .footer-logo {
   width: 100px; /* Adjust logo width */
   margin-right: 20px; /* Add space after the logo */
-  align-self:center ;
+  align-self: center;
 }
 
 .footer-description {
@@ -39,10 +40,10 @@
 }
 
 .footer-links {
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   flex: 1;
   margin-left: 70px;
-  margin-top: 60px
+  margin-top: 20px;
 }
 
 .footer-links h3 {
@@ -77,7 +78,7 @@
 .footer-follow {
   flex: 1;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .footer-follow h3 {
@@ -122,7 +123,6 @@
 /* Additional Adjustment for Quick Links (optional) */
 .ql-wrapper {
   margin-left: 80px;
-  
 }
 
 /* Align the footer icons properly */
@@ -134,4 +134,125 @@
   color: red;
   padding: 5px;
   text-align: center;
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack footer sections vertically */
+    gap: 30px; /* Add some space between sections */
+  }
+
+  .footer-left, .footer-links, .footer-follow {
+    flex: none; /* Remove the flex-grow behavior */
+    width: 100%; /* Ensure sections take full width */
+    text-align: center; /* Center align the content */
+    margin-left: 0px;
+  }
+
+  .footer-logo {
+    width: 80px; /* Make the logo smaller on mobile */
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer-links h3,
+  .footer-follow h3 {
+    font-size: 1.1rem; /* Make the titles smaller on mobile */
+  }
+
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+
+  .footer-links ul li a {
+    font-size: 0.9rem; /* Adjust font size of links */
+  }
+
+  .social-icon {
+    font-size: 1.5rem; /* Adjust icon size for mobile */
+    padding: 8px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem; /* Make copyright text smaller */
+    padding: 15px;
+  }
+}
+
+/* For screens between 768px and 1024px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: row; /* Stack horizontally but with wrap */
+    justify-content: space-between;
+  }
+
+  .footer-left, .footer-links, .footer-follow {
+    width: 30%; /* Limit width of each section */
+  }
+
+  .footer-links {
+    margin-top: 0; /* Remove extra margin from links section */
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-description {
+    font-size: 1rem;
+  }
+
+  .footer-links ul li {
+    margin: 15px 0; /* Increase space between links */
+  }
+
+  .footer-follow {
+    text-align: center;
+  }
+
+  .social-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screens larger than 1024px (Desktop) */
+@media screen and (min-width: 1025px) {
+  .footer-container {
+    flex-direction: row; /* Keep sections in row */
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-follow {
+    width: 30%; /* Set each section to take 30% of space */
+  }
+
+  .footer-logo {
+    width: 120px; /* Larger logo size */
+  }
+
+  .footer-description {
+    font-size: 1.1rem;
+  }
+
+  .footer-links ul li {
+    font-size: 1rem; /* Adjust font size for larger screens */
+  }
+
+  .social-icon {
+    font-size: 2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem; /* Increase copyright font size */
+  }
 }

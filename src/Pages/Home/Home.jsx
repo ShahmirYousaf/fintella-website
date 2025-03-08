@@ -100,6 +100,18 @@ const Home = () => {
             <h3>Automated Billing</h3>
             <p>Simplify recurring payments with automated invoicing and on-time collections.</p>
           </div>
+          <div className="service-card">
+            <i className="bi bi-hourglass-split service-icon"></i> 
+            <h3>
+            Comprehensive Solution</h3>
+            <p>Partner onboarding and management made easy.</p>
+          </div>
+
+          <div className="service-card">
+            <i className="bi bi-speedometer2 service-icon"></i> 
+            <h3>Process Automation</h3>
+            <p>Save time through automated invoicing and payment processing.</p>
+          </div>
         </div>
       </section>
 

@@ -1,107 +1,110 @@
 .merchant-container {
-    max-width: 1100px; /* Increased container width */
-    margin: 0 auto;
+  max-width: 1100px; /* Increased container width */
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px; /* Leave space for the navbar */
+  text-align: center;
+  background-color: hsl(0, 0%, 100%); /* Light background */
+  color: #333; /* Dark gray text */
+}
 
-    padding: 20px;
-    padding-top: 100px; /* Leave space for the navbar */
-    text-align: center;
-    background-color: hsl(0, 0%, 100%); /* Light background */
-    color: #333; /* Dark gray text */
-  }
-  
-  .merchant-page-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000; /* Black color for the title */
-    margin-bottom: 60px;
-    margin-top: 80px; /* Add more space above the heading */
-  }
-  
-  .merchant-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 30px; /* Adjusted gap between the rows and columns */
-    justify-items: center; /* Center items horizontally */
-    align-items:center; /* Align items at the top */
-  }
-  
-  .merchant-card {
-    background-color: #000000ea; /* White background */
-    border-radius: 20px; /* Slightly round corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for a modern look */
-    padding: 25px;
-    width: 100%;
-    max-width: 400px; /* Increased max-width */
-    min-height: 420px; /* Ensures consistent card height */
-    text-align: center;
-    color: #fff; /* Dark gray text */
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .merchant-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .merchant-image {
+.merchant-page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000; /* Black color for the title */
+  margin-bottom: 60px;
+  margin-top: 80px; /* Add more space above the heading */
+}
+
+.merchant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px; /* Adjusted gap between the rows and columns */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Align items at the top */
+}
+
+.merchant-card {
+  background-color: #000000ea; /* White background */
+  border-radius: 20px; /* Slightly round corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for a modern look */
+  padding: 25px;
+  width: 100%;
+  max-width: 400px; /* Increased max-width */
+  min-height: 420px; /* Ensures consistent card height */
+  text-align: center;
+  color: #fff; /* Dark gray text */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.merchant-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.merchant-image {
   width: 120px; /* Fixed width for images */
   height: 120px; /* Fixed height for images */
   object-fit: contain; /* Maintain aspect ratio and cover the area */
   border-radius: 10px;
   margin-bottom: auto;
-  margin-left: 110px;
+  margin-left: auto;
+  margin-right: auto; /* Center the image horizontally */
+}
 
+.merchant-title {
+  font-size: 24px;
+  color: #F52324; /* Red color for the title */
+  margin-bottom: 10px;
+  min-height: 50px; /* Ensure consistent height for titles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merchant-description {
+  font-size: 16px;
+  color: #fff; /* Medium gray text */
+  margin-bottom: 20px;
+  flex-grow: 1; /* Ensure the description takes up available space */
+}
+
+.merchant-link {
+  display: inline-block;
+  padding: 10px 20px; /* Reduced padding for a smaller button */
+  background-color: #F52324; /* Red background for the button */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-self: center; /* Center the button horizontally */
+  margin-top: auto; /* Push the button to the bottom */
+  width: auto; /* Ensures the button does not stretch too much */
+}
+
+.merchant-link:hover {
+  background-color: #B11224; /* Darker red on hover */
+}
+
+.merchant-link-icon {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .merchant-grid {
+    grid-template-columns: 1fr; /* One column on smaller screens */
   }
-  
-  .merchant-title {
-    font-size: 24px;
-    color: #F52324; /* Red color for the title */
-    margin-bottom: 10px;
-    min-height: 50px; /* Ensure consistent height for titles */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .merchant-card {
+    width: 100%;
   }
-  
-  .merchant-description {
-    font-size: 16px;
-    color: #fff; /* Medium gray text */
-    margin-bottom: 20px;
-    flex-grow: 1; /* Ensure the description takes up available space */
+
+  .merchant-image {
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
   }
-  
-  .merchant-link {
-    display: inline-block;
-    padding: 10px 20px; /* Reduced padding for a smaller button */
-    background-color: #F52324; /* Red background for the button */
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    align-self: center; /* Center the button horizontally */
-    margin-top: auto; /* Push the button to the bottom */
-    width: auto; /* Ensures the button does not stretch too much */
-  }
-  
-  .merchant-link:hover {
-    background-color: #B11224; /* Darker red on hover */
-  }
-  
-  .merchant-link-icon {
-    margin-left: 5px;
-  }
-  
-  @media (max-width: 768px) {
-    .merchant-grid {
-      grid-template-columns: 1fr; /* One column on smaller screens */
-    }
-  
-    .merchant-card {
-      width: 100%;
-    }
-  }
-  
+}

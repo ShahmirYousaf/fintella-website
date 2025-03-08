@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Contact.css'; // Import your CSS file for styling
 import Navbar from "../../Components/Navbar/Navbar";
 import emailjs from '@emailjs/browser';
-import { faPhoneAlt, faEnvelope, faMapMarkerAlt, faGavel, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactPage() {
@@ -43,7 +43,7 @@ function ContactPage() {
           setStatusMessage("Your message has been sent successfully!");
           console.log(formData.num,"number") 
           // Alert the user
-          alert("Your message has been sent successfully!");
+          alert(statusMessage);
 
           // Reset the form data
           setFormData({

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../../Data/Products';
 import './Product.css'; // Import the CSS file
-import Navbar from '../../Components/Navbar/Navbar';
 
 const Products = () => {
   return (

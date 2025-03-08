@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { faqs } from '../../Data/FAQs'; // Assuming you have the 'faqs' data defined elsewhere
 import './FAQ.css'
-import Navbar from '../../Components/Navbar/Navbar';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);

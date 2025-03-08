@@ -28,8 +28,8 @@ function ContactPage() {
     // Send email using EmailJS with dynamic data
     emailjs
       .send(
-        "service_rdfmj29",  // Replace with your EmailJS service ID
-        "template_vxs2lqg",  // Replace with your EmailJS template ID
+        "service_olijius",  // Replace with your EmailJS service ID
+        "template_tdyaxwq",  // Replace with your EmailJS template ID
         {
           from_name: formData.name,     // Pass the name from form
           from_email: formData.email,   // Pass the email from form
@@ -37,7 +37,7 @@ function ContactPage() {
           message: formData.message +"\n Phone Number: "+formData.num +"\n Email: "+formData.email,    // Pass the message from form
           reply_to: formData.email, 
         },
-        "kPkphabOhD2Df5ayK"  // Replace with your EmailJS user ID
+        "AW9__A_ybnYmjqeok"  // Replace with your EmailJS user ID
       )
       .then(
         (result) => {

@@ -8,7 +8,7 @@ import Home from './Pages/Home/Home';
 import FAQ from './Pages/FAQ/FAQ';
 import ContactPage from './Pages/Contact/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy/Privacy-policy';
-
+import ReturnPolicy from './Pages/Contact/ReturnRefund/ReturnRefund';
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails/>} />
         <Route path='/contact' element={<ContactPage/>}/>
         <Route path='/privacy' element={<PrivacyPolicy/>}/>
+        <Route path='/return_refund' element={<ReturnPolicy/>}/>
 
       </Routes>
     </Router>

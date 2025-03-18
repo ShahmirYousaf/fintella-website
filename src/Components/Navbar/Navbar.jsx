@@ -103,6 +103,17 @@ const Navbar = () => {
                                 Contact
                             </NavLink>
                         </li>
+                        <li className="navItem-FT">
+                            <NavLink
+                                to="/return_refund"
+                                exact
+                                className={({ isActive }) =>
+                                    isActive ? 'NavBarLinks-FT activePage' : 'NavBarLinks-FT'
+                                }
+                            >
+                                Return & Refunds
+                            </NavLink>
+                        </li>
                     </ul>
                     <div onClick={removeNavBar} className="closeNavBar">
                         <AiFillCloseCircle className="icon" />

@@ -33,7 +33,7 @@ body {
   }
   
   .main-heading {
-    color: red;
+    color: #F52324;
     font-size: 36px;
     margin-bottom: 20px;
   }
@@ -230,7 +230,7 @@ body {
   
   .service-card h3 {
     font-size: 18px;
-    color: red;
+    color: #F52324;
     margin-bottom: 10px;
   }
   

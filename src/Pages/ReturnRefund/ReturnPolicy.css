@@ -6,7 +6,7 @@
   box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
-h2 {
+.ret-ref-head {
   color: #555;
   margin-bottom: 10px;
   margin-top: 100px;
@@ -15,7 +15,7 @@ h2 {
 
 .heading-line {
   border: 0;
-  border-top: 2px solid red;
+  border-top: 2px solid #F52324;
   margin-bottom: 20px;
 }
 
@@ -43,13 +43,13 @@ h2 {
 }
 
 .tab.active {
-  background-color: lightcoral;
+  background-color: #F52324;
   color: #000; /* Text color for active tab */
 }
 
 .tab:hover {
-  background-color: #e1e1e1;
-  color: #555; /* Text color on hover */
+  background-color: #B11224;
+  color: #ffffff; /* Text color on hover */
 }
 
 .underline {
@@ -64,18 +64,23 @@ h2 {
   background-color: #fff;
 }
 
-h3, h4 {
+.h3-h4-head {
   margin-top: 0;
   color: #555;
   font-size: 1.5rem; /* Responsive font size */
 }
 
-ul, ol {
+ul {
   margin: 10px 0;
   padding-left: 20px;
 }
 
-li {
+.ul-0l-ret-ref {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.ret-ref-li {
   margin-bottom: 10px;
   color: #555;
 }
@@ -88,17 +93,17 @@ hr {
 
 .note {
   background-color: #f9f9f9;
-  border-left: 4px solid red;
+  border-left: 4px solid #F52324;
   padding: 10px;
   margin: 20px 0;
   color: #333;
 }
 
 .note strong {
-  color: red;
+  color: #F52324;
 }
 
-p {
+.ret-ref-p {
   color: #555;
   line-height: 1.6;
   font-size: 1rem; /* Responsive font size */
@@ -123,7 +128,7 @@ strong {
   transform: translateY(-50%);
   width: 12px; /* Size of the circle */
   height: 12px; /* Size of the circle */
-  border: 2px solid red; /* Red border for the circle */
+  border: 2px solid #F52324; /* Red border for the circle */
   border-radius: 50%; /* Makes it a circle */
   background-color: transparent; /* Transparent background */
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
-import { FaTelegramPlane, FaInstagram, FaHome, FaCogs, FaRegListAlt, FaQuestionCircle, FaEnvelope, FaLock } from 'react-icons/fa'; // Import social and other icons
+import { FaTelegramPlane, FaInstagram, FaHome, FaCogs, FaRegListAlt, FaQuestionCircle, FaEnvelope, FaLock, FaUndo } from 'react-icons/fa'; // Import social and other icons
 import { NavLink } from 'react-router-dom';  // Import NavLink from react-router-dom for routing
 
 function Footer() {
@@ -45,6 +45,10 @@ function Footer() {
               <li>
                 <FaEnvelope className="footer-icon" /> 
                 <NavLink to="/contact" exact>Contact</NavLink> {/* Correct Link */}
+              </li>
+              <li>
+                <FaUndo className="footer-icon" />
+                <NavLink to="/return_refund" exact>Return & Refund</NavLink>
               </li>
             </ul>
           </div>

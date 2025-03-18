@@ -8,7 +8,7 @@ import Home from './Pages/Home/Home';
 import FAQ from './Pages/FAQ/FAQ';
 import ContactPage from './Pages/Contact/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy/Privacy-policy';
-import ReturnPolicy from './Pages/Contact/ReturnRefund/ReturnRefund';
+import ReturnPolicy from './Pages/ReturnRefund/ReturnRefund';
 function App() {
   return (
     <Router>

@@ -48,7 +48,7 @@
 
 .footer-links h3 {
   font-size: 1.2rem;
-  color: red;
+  color: #F52324;
   margin-bottom: 15px;
   text-align: center; /* Center the heading */
 }
@@ -72,7 +72,7 @@
 }
 
 .footer-links ul li a:hover {
-  color: red;
+  color: #F52324;
 }
 
 .footer-follow {
@@ -83,7 +83,7 @@
 
 .footer-follow h3 {
   font-size: 1.2rem;
-  color: red;
+  color: #F52324;
   margin-bottom: 15px;
 }
 
@@ -95,11 +95,11 @@
 
 .social-icon {
   font-size: 2rem;
-  color: red;
+  color: #F52324;
   transition: color 0.3s;
   border: 2px solid darkgray;
   border-radius: 5px;
-  color: red;
+  color: #F52324;
   padding: 5px;
   text-align: center;
 }
@@ -131,7 +131,7 @@
   border: 2px solid darkgray;
   font-size: 1.5rem;
   border-radius: 5px;
-  color: red;
+  color: #F52324;
   padding: 5px;
   text-align: center;
 }

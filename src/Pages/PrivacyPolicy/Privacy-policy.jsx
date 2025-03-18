@@ -53,6 +53,12 @@ function PrivacyPolicy() {
           <h2>Updates to This Policy</h2>
           <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with a revised effective date. We encourage you to review this policy periodically.</p>
 
+          <h2>Terms and Conditions</h2>
+          <p>By accessing and using the Fintella Technologies website, you agree to comply with and be bound by the following terms and conditions. Our services, including advanced software development, IT solutions, data processing, API integrations, and custom software development, are provided subject to these terms. All content, including courses and e-books, is for personal use only and may not be reproduced, 
+            distributed, or modified without prior written consent. 
+            Fintella Technologies reserves the right to update or modify these terms at any time, and it is your responsibility to review them regularly. By continuing to use our website, you accept any changes made. We disclaim any liability for damages arising from the use of our website and services. For more detailed information, please refer to our Privacy Policy and additional terms provided on our website.</p>
+
+
           <h2 className='privacy-contact'>Contact Us</h2>
           <div className="contact-info-privacy">
             <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>

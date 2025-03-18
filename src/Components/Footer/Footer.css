@@ -1,5 +1,5 @@
 /* Footer Styles */
-.footer {
+.footer-component {
   background-color: #ffffff;
   padding: 5px 0;
   font-family: Arial, sans-serif;
@@ -48,7 +48,7 @@
 
 .footer-links h3 {
   font-size: 1.2rem;
-  color: #4CAF50;
+  color: red;
   margin-bottom: 15px;
   text-align: center; /* Center the heading */
 }
@@ -72,7 +72,7 @@
 }
 
 .footer-links ul li a:hover {
-  color: #4CAF50;
+  color: red;
 }
 
 .footer-follow {
@@ -83,7 +83,7 @@
 
 .footer-follow h3 {
   font-size: 1.2rem;
-  color: #4CAF50;
+  color: red;
   margin-bottom: 15px;
 }
 
@@ -95,7 +95,7 @@
 
 .social-icon {
   font-size: 2rem;
-  color: #4CAF50;
+  color: red;
   transition: color 0.3s;
   border: 2px solid darkgray;
   border-radius: 5px;

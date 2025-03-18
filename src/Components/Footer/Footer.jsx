@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
-import { FaTelegramPlane, FaInstagram, FaHome, FaCogs, FaRegListAlt, FaQuestionCircle, FaEnvelope } from 'react-icons/fa'; // Import social and other icons
+import { FaTelegramPlane, FaInstagram, FaHome, FaCogs, FaRegListAlt, FaQuestionCircle, FaEnvelope, FaLock } from 'react-icons/fa'; // Import social and other icons
 import { NavLink } from 'react-router-dom';  // Import NavLink from react-router-dom for routing
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer-component">
       <div className="footer-container">
         {/* Left Section: Company Information */}
         <div className="footer-left">
@@ -37,6 +37,10 @@ function Footer() {
               <li>
                 <FaQuestionCircle className="footer-icon" /> 
                 <NavLink to="/faq" exact>FAQS</NavLink> {/* Correct Link */}
+              </li>
+              <li>
+                <FaLock className="footer-icon" /> 
+                <NavLink to="/privacy" exact>Privacy Policy</NavLink>
               </li>
               <li>
                 <FaEnvelope className="footer-icon" /> 

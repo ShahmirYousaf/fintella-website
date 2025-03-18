@@ -1,123 +1,191 @@
 .return-policy-container {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h2 {
-    color: #555;
-    margin-bottom: 10px;
-    margin-top: 100px;
-  }
-  
-  .heading-line {
-    border: 0;
-    border-top: 2px solid red;
-    margin-bottom: 20px;
-  }  
-  .tabs {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top:20px;
-    gap:10px;
-    
-  }
-  
-  .tab {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    
-    color: #333; /* Default text color */
-    border-radius: 5px;
-  }
-   .underline {
-     /* border-bottom: 3px solid red; 
-     padding-bottom: 3px;  */
-    font-weight: bold; 
-    color: #555; 
-    display: inline-block; 
-  } 
-  .tab.active {
-    background-color: lightcoral;
-    color: #000; /* Text color for active tab */
-  }
-  
-  .tab:hover {
-    background-color: #e1e1e1;
-    color: #555; /* Text color on hover */
-  }
-  
-  .content {
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: #fff;
-  }
-  
-  h3, h4 {
-    margin-top: 0;
-    color: #555
-  }
-  
-  ul, ol {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
-  }
-  
-  .note {
-    background-color: #f9f9f9;
-    border-left: 4px solid red;
-    padding: 10px;
-    margin: 20px 0;
-    color: #333;
-  }
-  
-  .note strong {
-    color: red;
-  }
-  
-  p {
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  strong {
-    color: #333;
-  }
-  
-  .circled-bullets li{
-    position: relative;
-    padding-left: 25px; /* Space for the custom bullet */
-    margin-bottom: 20px; /* Space between bullet points */
-    color: #555; /* Text color */
-    
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
 
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  font-size: 2rem; /* Responsive font size */
+}
+
+.heading-line {
+  border: 0;
+  border-top: 2px solid red;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Default text color */
+  border-radius: 5px;
+  min-width: 150px; /* Ensures tabs don't get too small */
+}
+
+.tab.active {
+  background-color: lightcoral;
+  color: #000; /* Text color for active tab */
+}
+
+.tab:hover {
+  background-color: #e1e1e1;
+  color: #555; /* Text color on hover */
+}
+
+.underline {
+  font-weight: bold;
+  color: #555;
+  display: inline-block;
+}
+
+.content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h3, h4 {
+  margin-top: 0;
+  color: #555;
+  font-size: 1.5rem; /* Responsive font size */
+}
+
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.note {
+  background-color: #f9f9f9;
+  border-left: 4px solid red;
+  padding: 10px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.note strong {
+  color: red;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem; /* Responsive font size */
+}
+
+strong {
+  color: #333;
+}
+
+.circled-bullets li {
+  position: relative;
+  padding-left: 25px; /* Space for the custom bullet */
+  margin-bottom: 20px; /* Space between bullet points */
+  color: #555; /* Text color */
+}
+
+.circled-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 12px; /* Size of the circle */
+  height: 12px; /* Size of the circle */
+  border: 2px solid red; /* Red border for the circle */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: transparent; /* Transparent background */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    margin-top: 50px; /* Reduce top margin for smaller screens */
+    font-size: 1.75rem; /* Smaller font size */
   }
+
+  .tabs {
+    flex-direction: column; /* Stack tabs vertically */
+    gap: 10px;
+  }
+
+  .tab {
+    width: 100%; /* Full width for stacked tabs */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .content {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  h3, h4 {
+    font-size: 1.25rem; /* Smaller font size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  h2 {
+    margin-top: 30px; /* Further reduce top margin */
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .tab {
+    padding: 8px; /* Smaller padding for mobile */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .content {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  h3, h4 {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  p {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
   .circled-bullets li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 12px; /* Size of the circle */
-    height: 12px; /* Size of the circle */
-    border: 2px solid red; /* Red border for the circle */
-    border-radius: 50%; /* Makes it a circle */
-    background-color: transparent; /* Transparent background */
+    width: 10px; /* Smaller circle */
+    height: 10px; /* Smaller circle */
   }
+}
